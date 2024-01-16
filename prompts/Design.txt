@@ -1,0 +1,6 @@
+I want to train a Reinforcement Learning Agent for a learning scenario, and I want you to design the RL environment components of this scenario. 
+
+Here is the scenario:
+<Describe the scenario here> 
+
+What's the observation space and action space for this scenario? List the attributes of observation and action and justify why these sets of attributes are enough for the agent to learn the task in this environment.
