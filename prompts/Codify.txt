@@ -1,0 +1,63 @@
+I want you to codify the environment for the scenario I described before. I want you to follow the format of the OpenAI gymnasium environments library provided below. It's recommended to start with "import gymnasium as gym".
+Fill out the functions and generate code where specified so that we can train this agent. You can add new functions if you want but Don't change input-output format of the existing functions. 
+You should initialize self.observation_space and self.action_space in the init function. Use the predefined spaces from gymnasium.spaces to initialize them. 
+You are free to use Python libraries such as numpy in the environment. Just remember to import them.
+
+
+
+class EnvName(gym.Env):
+  
+    def __init__(self, args):
+    	
+        # Generate Code Here
+
+
+
+    def _perform_transition(self, action):
+        
+        # Generate Code Here
+        
+        return  observation
+	
+    
+    
+    def _get_reward(self, action, observation, terminated):
+    	
+    	# Generate Code Here
+    	
+    	return r
+    
+    
+    def _is_terminated(self):
+    	
+    	# Generate Code Here
+    	
+    	return terminated
+    
+    
+	def _get_info(self):
+		
+		# Generate Code Here If Necessary
+		
+    	return info    
+    
+
+	def step(self, action):
+    
+    	observation = self._perform_transition(action)
+    	terminated = self_is_terminated(observation)
+    	reward = self._get_reward(action, observation, terminated)
+    	info = self._get_info()
+
+    	return observation, reward, terminated, False, info
+    
+    
+    
+    
+    
+    def reset(self, seed=None, options=None):
+    	super().reset(seed=seed)
+
+		# Generate Code Here
+	
+    	return observation, info
