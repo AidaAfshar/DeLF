@@ -1,0 +1,1 @@
+There is an agent in an 8 by 8 grid world. There is a key located in one of the grids and a lock in another. The agent should learn to find and pick up the key, bring it to the lock, and open the lock with that. 
